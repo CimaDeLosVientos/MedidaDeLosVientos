@@ -42,6 +42,7 @@ The SD card reader module uses the SPI protocol to communicate with the board. T
   - MISO - pin 11
   - MOSI - pin 13
   - CS - pin 10
+    
 Take into account that the ESP32 board has four SPI interfaces, but two of them are already in use for the PSRAM and the WiFi module. The selected pins are for the default user SPI interface and could be overridden in case it's necessary for your project.
 On another note, the SD card module we used expects a 5V input. However, the pin labelled as 5V in our board is configured as input by default. In order to convert it to a 5V output, one must solder a jumper in the board (near the pins 11 and 12)
 
